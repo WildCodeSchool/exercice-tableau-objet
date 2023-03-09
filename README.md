@@ -18,10 +18,10 @@ Vous entrainez à utiliser :
 
 Réussir à afficher dans votre console via une boucle et des conditions:
 
-Je suis un chien, je possède 4 pattes et j'ai des poils
-Je suis un chat, je possède 4 pattes et j'ai des poils
-Je suis un oiseau, je possède 2 pattes et j'ai des plumes
-Je suis un poisson, je possède 0 pattes et j'ai des écailles
+Je suis un caniche, je possède 4 pattes et j'ai des poils
+Je suis un persan, je possède 4 pattes et j'ai des poils
+Je suis un canari, je possède 2 pattes et j'ai des plumes
+Je suis un saumon, je possède 0 pattes et j'ai des écailles
 
 ## Lancement
 
