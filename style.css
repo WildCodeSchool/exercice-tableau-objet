@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.div-alert {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-alert {
+  margin-top: 200px;
+  width: 200px;
+  height: 30px;
+}
+
+#fond {
+  margin: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+  margin: 100px;
+  color: blue;
+  font-weight: 600;
+}
+
+.red {
+  color: red;
+}

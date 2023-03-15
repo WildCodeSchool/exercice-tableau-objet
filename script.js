@@ -1,106 +1,30 @@
-console.log('coucou');
+const buttonAlert = document.querySelector('#btn-alert');
 
-/* ---------------   constante pour les exercices  -------------------- */
+buttonAlert.addEventListener('click', function () {
+  alert('coucou');
+});
 
-const listeAnimaux = ['caniche', 'persan', 'canari', 'saumon'];
+const buttonColor = document.querySelector('#btn-color');
+const textColor = document.querySelector('.blue');
 
-const animaux = [
-  {
-    famille: 'chien',
-    patte: 4,
-    poils: true,
-    race: 'caniche',
-  },
+buttonColor.addEventListener('click', function () {
+  setTimeout(function () {
+    textColor.classList.toggle('red');
+  }, 3000);
+});
 
-  {
-    famille: 'chat',
-    patte: 4,
-    poils: true,
-    race: 'persan',
-  },
+const backgroundColorDiv = document.querySelector('#fond');
 
-  {
-    famille: 'oiseau',
-    patte: 2,
-    poils: false,
-    race: 'canari',
-  },
+backgroundColorDiv.addEventListener('mouseover', function () {
+  backgroundColorDiv.style.backgroundColor = 'yellow';
+});
 
-  {
-    famille: 'poisson',
-    patte: 0,
-    poils: false,
-    race: 'saumon',
-  },
-];
-
-/* ---------------   EXERCICE 1  -------------------- */
-
-/* écrivez votre code ici */
-
-
-
-/* ---------------   BONUS  -------------------- */
-
-const animaux2 = [
-  {
-    famille: 'chien',
-    patte: 4,
-    poils: true,
-    race: 'dalmatien',
-  },
-
-  {
-    famille: 'chien',
-    patte: 4,
-    poils: true,
-    race: 'dobermann',
-  },
-
-  {
-    famille: 'chat',
-    patte: 4,
-    poils: true,
-    race: 'siberien',
-  },
-
-  {
-    famille: 'chat',
-    patte: 4,
-    poils: true,
-    race: 'chartreux',
-  },
-
-  {
-    famille: 'oiseau',
-    patte: 2,
-    poils: false,
-    race: 'rouge gorge',
-  },
-  {
-    famille: 'oiseau',
-    patte: 2,
-    poils: false,
-    race: 'perroquet',
-  },
-  {
-    famille: 'oiseau',
-    patte: 2,
-    poils: false,
-    race: 'faisan',
-  },
-
-  {
-    famille: 'poisson',
-    patte: 0,
-    poils: false,
-    race: 'thon',
-  },
-  {
-    famille: 'poisson',
-    patte: 0,
-    poils: false,
-    race: 'bar',
-  },
-];
-
+document.querySelector('#create-title').addEventListener('click', function () {
+  let button = document.querySelectorAll('button');
+  for (let i = 0; i < button.length; i++) {
+    let _section = button[i];
+    let h2 = document.createElement('h2');
+    h2.innerHTML = 'mon texte h2';
+    _section.prepend(h2);
+  }
+});
